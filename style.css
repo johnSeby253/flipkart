@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    overflow-x: hidden;
+}
+#nav {
+    background-color: white;
+}
+.navbarr {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+}
+.navbar-brand img {
+    width: 90px;
+    margin-left: 70px;
+}
+.nav-item {
+    margin-left: 40px;
+}
+.searchh {
+    width: 600px;
+    border-radius: 10px;
+    height: 38px;
+    border: solid white;
+    background-color: aliceblue;
+}
+#item {
+    background-color: aquamarine;
+    margin-top: 20px;
+}
+#items img {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+}
+.add_box {
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+}
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+}
+.itm_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.itmspn {
+    cursor: pointer;
+    text-align: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.card img {
+    width: 180px;
+    height: 190px;
+    padding: 10px;
+}
+.dropbtn { 
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+ 
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200.98px) {
+    .searchh {
+        width: 300px;
+    }
+    .card {
+        width: 150px;
+        height: 300px;
+    }
+    .card img {
+        width: 140px;
+        height: 160px;
+    }
+    .card-body h5 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .card-body {
+        font-size: 12px;
+    }
+    .itmspn, .dropbtn {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .card {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 160px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 464.98px) {
+    .card {
+        width: 180px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 160px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 393.98px) {
+    .card {
+        width: 150px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 140px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 320.98px) {
+    .card {
+        width: 120px;
+        height: 450px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 110px;
+        height: 120px;
+    }
+    .card-body h5 {
+        font-size: 10px;
+        font-weight: 800;
+    }
+    .card-body p {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .itmspn, .dropbtn {
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .dropdown-content {
+        min-width: 10px; /* Adjust this as needed */
+    }
+
+    /* Ensure dropdown content is correctly positioned and visible */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: static;
+    }
+}
